@@ -12,4 +12,7 @@ resource "aws_instance" "ziyotek-instance-1" {
       #prevent_destroy = true
       ignore_changes = [tags]
  }
+   tags = {
+    Name = "SampleApp"    
+  }
 }
